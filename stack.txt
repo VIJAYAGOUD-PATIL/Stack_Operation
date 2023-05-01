@@ -1,0 +1,50 @@
+import java.util.*;
+import java.util.Scanner;
+
+class a{
+    public static void main(String args[])
+    {
+        Stack<Integer> stk=new Stack<Integer>();
+        Scanner s=new Scanner(System.in);
+        System.out.println("Stack Operation : ");
+        System.out.println("Enter The One To Start");
+        int n=s.nextInt();
+    
+        switch(n)
+        {
+            case 1:
+        System.out.println("Enter The Number of Elements You Wants To Insert : ");
+        int s1=s.nextInt();
+        System.out.println("Enter The Numbers : ");
+
+
+        for(int i=1;i<=s1;i++)
+        {
+            int s2=s.nextInt();
+        stk.push(s2);
+       
+        }
+         System.out.println("The Stack Elements are: "+stk);
+        
+         System.out.println("You Want To Pop Elements :");
+         System.out.println("1.Yes\n2.No");
+         System.out.println("Enter The Choice : ");
+         int c=s.nextInt();
+         switch(c)
+         {
+            case 1:
+            for(int i=1;i<=s1;i++)
+            {
+                int a=stk.pop();
+            }
+            System.out.println("After Pop Operation "+stk);
+            break;
+            case 2:
+            System.out.println("In The Stack Elements Are: "+stk);
+         }
+
+
+        
+}
+}   
+}
